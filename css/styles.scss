@@ -1,0 +1,231 @@
+.main{
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				height: 70vw;
+				width: 70vw;
+				transform: translate(-50%,-50%);
+				background-color: white;
+				box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+				border-radius: 1vw;
+				display: grid;
+				grid-template-columns: 34vw 34vw;
+				justify-content: center;
+				padding-top: 1vw;
+				column-gap: 1vw;
+				row-gap: 0;
+				overflow: hidden;
+			}
+			.card{
+				cursor: pointer;
+				position: relative;
+			}
+			.card .btn{
+				opacity: 0;
+				user-select: none;
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #EC6565;
+				box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5);
+				border-radius: 50%;
+				width: 20vw;
+				height: 20vw;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				color: white;
+				font-size: 8vw;
+				font-weight: lighter;
+				z-index: 3;
+				transition: all 0.5s ease-in-out;
+			}
+			.card .btn span{
+				transform: translateY(-5%);
+			}
+			.card img{
+				width: 100%;
+				height: auto;
+			}
+			.card .back{
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 97%;
+				z-index: 2;
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: all 0.5s ease-in-out;
+			}
+			.card:hover .back{
+				opacity: 1;
+			}
+			.card:hover .btn{
+				opacity: 1;
+				width: 10vw;
+				height: 10vw;
+			}
+			.profile{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				
+			}
+			.profile .top{
+				position: absolute;
+				top: -50%;
+				left: 0;
+				width: 100%;
+				height: 45%;
+				background-image: url('https://100dayscss.com/codepen/13-1-header.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: 3;
+				
+			}
+			.profile .bottom{
+				position: absolute;
+				top: 100%;
+				width: 100%;
+				height: 55%;
+				display: flex;
+				align-items: center;
+				gap: 5vw;
+				background-color: #EC6565;
+				justify-content: center;
+				padding-top: 5vw;
+				z-index: 3;
+			}
+			.profile .bottom .btn{
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				fill: white;
+				width: 8vw;
+				height: 8vw;
+				border: 0.2vw solid white;
+				border-radius: 50%;
+				transition: all 0.2s ease-in-out;
+			}
+			.profile .bottom .btn:hover{
+				fill: #EC6565;
+				background-color: white;
+			}
+			.profile .bottom span{
+				color: white;
+				font-weight: bold;
+				position: absolute;
+				top: 12vw;
+				font-size: 4vw;
+			}
+			.profile .icon{
+				z-index: 5;
+				position: absolute;
+				background-image: url('https://100dayscss.com/codepen/13-1.jpg');
+				background-size: cover;
+				width: 20vw;
+				height: 20vw;
+				top: -30%;
+				left: 50%;
+				transform: translate(-50%);
+				border-radius: 50%;
+				border: 0.3vw solid white;
+				box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5);
+			}
+			.close_btn{
+				user-select: none;
+				cursor: pointer;
+				position: fixed;
+				width: 10vw;
+				height: 10vw;
+				right: 2vw;
+				top: -15vw;
+				background-color: #EC6565;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 8vw;
+				color: white;
+				transform: rotate(45deg);
+				transition: all 0.3s ease-in-out;
+				font-weight: lighter;
+				
+			}
+			.close_btn span{
+				transform: translateY(-5%);
+			}
+			.close_btn:hover{
+				background-color: white;
+				color: #EC6565;
+			}
+			
+			@keyframes a1 {
+				0%{
+					top: -50%;
+				}
+				100%{
+					top: 0;
+				}
+			}
+			@keyframes a2 {
+				0%{
+					top: 100%;
+				}
+				100%{
+					top: 45%;
+				}
+			}
+			@keyframes a3 {
+				0%{
+					top: 2vw;
+				}
+				100%{
+					top: -15vw;
+				}
+			}
+			@keyframes a4 {
+				0%{
+					top: 30%;
+				}
+				100%{
+					top: -40%;
+				}
+			}
+			@keyframes a5 {
+				0%{
+					top: 0%;
+				}
+				100%{
+					top: -50%;
+				}
+			}
+			@keyframes a6 {
+				0%{
+					top: 45%;
+				}
+				100%{
+					top: 100%;
+				}
+			}
+			@keyframes a7 {
+				0%{
+					top: -15vw;
+				}
+				100%{
+					top: 2vw;
+				}
+			}
+			@keyframes a8 {
+				0%{
+					top: -40%;
+				}
+				100%{
+					top: 30%;
+				}
+			}
